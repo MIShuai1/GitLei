@@ -8,3 +8,15 @@ code conclick2
 =======
 code conclick1
 >>>>>>> b59f2d3ce2ef2972bd9195e7ed6e353eb1b014bf
+import Layout from '@/layout/default';
+export default {
+    path: '/management',
+    component: Layout,
+    meta: {
+        moduleCode: 'datamanage',
+        groupCode: 'NC_SYSTEM',
+        title: '农场管理',
+        icon: 'management',
+        roles: ['农场管理'],
+        folder: true // 父级文件夹，必须！！否则面包屑能导航
+    },
