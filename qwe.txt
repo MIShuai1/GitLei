@@ -3,5 +3,22 @@ qwertyuio
 Mishuai1
 MiShuai2003216..
 我也不知道
+<<<<<<< .merge_file_a81452
 code conclick2
 code conclick1
+=======
+import Layout from '@/layout/default';
+export default {
+    path: '/management',
+    component: Layout,
+    meta: {
+        moduleCode: 'datamanage',
+        groupCode: 'NC_SYSTEM',
+        title: '农场管理',
+        icon: 'management',
+        roles: ['农场管理'],
+        folder: true // 父级文件夹，必须！！否则面包屑能导航
+    },
+    children: [{
+        path: '/garden',
+>>>>>>> .merge_file_a81984
