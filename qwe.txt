@@ -17,3 +17,316 @@ export default {
     },
     children: [{
         path: '/garden',
+        name: 'garden',
+        component: () =>
+            import('@/views/management/garden/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '示范园档案',
+            icon: 'form',
+            roles: ['示范园档案_显示'],
+          //  keepAlive: true
+        },
+    },
+    {
+        path: '/gardenDetail',
+        name: 'gardenDetail',
+        component: () =>
+            import('@/views/management/garden/look'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '示范园档案查看',
+            icon: 'form',
+            roles: ['示范园档案_查看']
+        },
+        hidden: true
+    }, {
+        path: '/gardenAdd',
+        name: 'gardenAdd',
+        component: () =>
+            import('@/views/management/garden/addlist'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '示范园档案',
+            icon: 'form',
+            roles: ['示范园档案_添加'],
+            keepAlive: false
+        },
+        hidden: true
+    }, {
+        path: '/landAdd',
+        name: 'landAdd',
+        component: () =>
+            import('@/views/management/garden/land'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '添加地块',
+            icon: 'form',
+        },
+        hidden: true
+    }, {
+        path: '/gardenUpdate',
+        name: 'gardenUpdate',
+        component: () =>
+            import('@/views/management/garden/edit'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '示范园档案编辑',
+            icon: 'form',
+            roles: ['示范园档案_编辑']
+        },
+        hidden: true
+    },
+
+    {
+        path: '/customer',
+        name: 'customer',
+        component: () =>
+            import('@/views/management/customer/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '客户农场档案',
+            icon: 'form',
+            roles: ['客户农场档案_显示']
+        },
+    },
+    {
+        path: '/customerDetail',
+        name: 'customerDetail',
+        component: () =>
+            import('@/views/management/customer/look'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '客户农场档案查看',
+            icon: 'form',
+            roles: ['客户农场档案_查看']
+        },
+        hidden: true
+    }, {
+        path: '/customerAdd',
+        name: 'customerAdd',
+        component: () =>
+            import('@/views/management/customer/addFarm'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '客户农场档案',
+            icon: 'form',
+            roles: ['客户农场档案_添加']
+        },
+        hidden: true
+    }, {
+        path: '/customerlandAdd',
+        name: 'customerlandAdd',
+        component: () =>
+            import('@/views/management/customer/landEdit'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '客户农场档案添加地块',
+            icon: 'form',
+        },
+        hidden: true
+    }, {
+        path: '/landUpdate',
+        name: 'landUpdate',
+        component: () =>
+            import('@/views/management/customer/landUpdate'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '客户农场档案修改地块',
+            icon: 'form',
+        },
+        hidden: true
+    }, {
+        path: '/customerUpdate',
+        name: 'customerUpdate',
+        component: () =>
+            import('@/views/management/customer/update'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '客户农场档案编辑',
+            icon: 'form',
+            roles: ['客户农场档案_编辑']
+        },
+        hidden: true
+    }
+
+        , {
+        path: '/farmplan',
+        name: 'farmplan',
+        component: () =>
+            import('@/views/management/farmplan/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '临时农事计划',
+            icon: 'form',
+            roles: ['临时农事计划_显示']
+        },
+    },
+    {
+        path: '/farmplanDetail',
+        name: 'farmplanDetail',
+        component: () =>
+            import('@/views/management/farmplan/look'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '临时农事计划查看',
+            icon: 'form',
+            roles: ['临时农事计划_查看']
+        },
+        hidden: true
+
+
+    }, {
+        path: '/records',
+        name: 'records',
+        component: () =>
+            import('@/views/management/records/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '农事记录',
+            icon: 'form',
+            roles: ['农事记录_显示']
+        },
+    },
+    {
+        path: '/recordsDetail',
+        name: 'recordsDetail',
+        component: () =>
+            import('@/views/management/records/look'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '农事记录查看',
+            icon: 'form',
+            roles: ['农事记录_查看']
+        },
+        hidden: true
+
+
+    },
+    //  {
+    //     path: '/growthlogs',
+    //     name: 'growthlogs',
+    //     component: () =>
+    //         import('@/views/management/growthlogs/index'),
+    //     meta: {
+    //         moduleCode: 'datamanage',
+    //         title: '生长日志',
+    //         icon: 'form',
+    //         roles: ['生长日志_显示']
+    //     },
+    // },
+    // {
+    //   path: '/growthlogsDetail',
+    //   name: 'growthlogsDetail',
+    //   component: () =>
+    //     import('@/views/management/growthlogs/look'),
+    //   meta: {
+    //     moduleCode: 'datamanage',
+    //     title: '生长日志查看',
+    //     icon: 'form',
+    //     roles: ['生长日志_查看']
+    //   },
+    //   hidden: true
+
+
+    // },
+    {
+        path: '/waterAndFertilizer',
+        name: 'waterAndFertilizer',
+        component: () =>
+            import('@/views/management/waterAndFertilizer/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '精准水肥记录',
+            icon: 'form',
+            roles: ['精准水肥记录_显示']
+        },
+    },
+    {
+        path: '/waterAndFertilizerDetail',
+        name: 'waterAndFertilizerDetail',
+        component: () =>
+            import('@/views/management/waterAndFertilizer/look'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '精准水肥记录查看',
+            icon: 'form',
+            roles: ['精准水肥记录_查看']
+        },
+        hidden: true
+    },
+    {
+        path: '/audit',
+        name: 'audit',
+        component: () =>
+            import('@/views/management/audit/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '开通溯源审核',
+            icon: 'form',
+            roles: ['开通溯源审核_显示']
+        },
+    },
+    {
+        path: '/observation',
+        name: 'observation',
+        component: () =>
+            import('@/views/farming/observation/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '生长日志',
+            icon: 'form',
+            keepAlive: true,
+            roles: ['生长日志_显示']
+        }
+    }, {
+        path: '/observationView',
+        name: 'observationView',
+        component: () =>
+            import('@/views/farming/observation/view'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '物候期观察查看',
+            icon: 'form',
+
+            // roles: ['物候期观察_查看']
+        },
+        hidden: true
+    }, {
+        path: '/growthlogsDetail',
+        name: 'growthlogsDetail',
+        component: () =>
+            import('@/views/farming/observation/growthlogslook'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '生长日志查看',
+            icon: 'form',
+            // roles: ['生长日志_查看']
+        },
+        hidden: true
+    },{
+        path: '/labelAudit',
+        name: 'labelAudit',
+        component: () =>
+            import('@/views/management/sourceLabelAudit/audit'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '溯源标签审核',
+            icon: 'form',
+            roles: ['溯源标签审核_显示']
+        }
+    },{
+        path: '/landCompare',
+        name: 'landCompare',
+        component: () =>
+            import('@/views/management/landCompare/index'),
+        meta: {
+            moduleCode: 'datamanage',
+            title: '地块信息',
+            icon: 'form',
+            // roles: ['地块信息_显示']
+        },
+        hidden: true
+    }
+]
+};
