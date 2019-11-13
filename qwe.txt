@@ -3,4 +3,8 @@ qwertyuio
 Mishuai1
 MiShuai2003216..
 我也不知道
+<<<<<<< HEAD
 code conclick2
+=======
+code conclick1
+>>>>>>> b59f2d3ce2ef2972bd9195e7ed6e353eb1b014bf
