@@ -3,10 +3,8 @@ qwertyuio
 Mishuai1
 MiShuai2003216..
 我也不知道
-<<<<<<< .merge_file_a81452
 code conclick2
 code conclick1
-=======
 import Layout from '@/layout/default';
 export default {
     path: '/management',
@@ -21,4 +19,4 @@ export default {
     },
     children: [{
         path: '/garden',
->>>>>>> .merge_file_a81984
+
